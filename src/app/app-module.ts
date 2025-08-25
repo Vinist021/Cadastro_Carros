@@ -6,12 +6,14 @@ import { App } from './app';
 import { CarroComponent } from './components/carro/carro';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header';
+import { CarrosComponent } from './components/carros/carros';
 
 @NgModule({
   declarations: [
     App,
     CarroComponent,
-    HeaderComponent
+    HeaderComponent,
+    CarrosComponent
   ],
   imports: [
     BrowserModule,

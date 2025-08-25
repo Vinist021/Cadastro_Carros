@@ -1,0 +1,23 @@
+<div class="container">
+    <h3>Carros Cadastrados</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Montadora</th>
+                <th>Preço</th>
+                <th>Ano</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let carro of carros">
+                <td>{{carro.id}}</td>
+                <td>{{carro.nome}}</td>
+                <td>{{carro.montadora}}</td>
+                <td>{{carro.preco}}</td>
+                <td>{{carro.ano}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
