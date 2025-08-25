@@ -9,6 +9,8 @@ import { Carro } from '../../models/carro';
 })
 export class CarrosComponent {
 
+  novoCarro: Carro = {} as Carro;
+
   carros: Carro[] = [
     {
         id: 1,

@@ -3,19 +3,19 @@
     <form action="">
         <div class="row">
             <label for="nome" class="col-form-label">Nome:</label>
-            <input type="text" class="form-control" name="nome" id="nome" required> 
+            <input type="text" class="form-control" [(ngModel)]="carro.nome" name="nome" id="nome" required> 
         </div>
         <div class="row">
             <label for="montadora" class="col-form-label">Montadora:</label>
-            <input type="text" class="form-control" name="montadora" id="montadora" required> 
+            <input type="text" class="form-control" [(ngModel)]="carro.montadora" name="montadora" id="montadora" required> 
         </div>
         <div class="row">
             <label for="preco" class="col-form-label">Preço:</label>
-            <input type="text" class="form-control" name="preco" id="preco" required> 
+            <input type="text" class="form-control" [(ngModel)]="carro.preco" name="preco" id="preco" required> 
         </div>
         <div class="row">
             <label for="preco" class="col-form-label">Ano:</label>
-            <input type="text" class="form-control" name="ano" id="ano" required> 
+            <input type="text" class="form-control" [(ngModel)]="carro.ano" name="ano" id="ano" required> 
         </div>
         <div class="row">
             <div>

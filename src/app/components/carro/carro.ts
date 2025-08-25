@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Carro } from '../../models/carro';
 
 @Component({
@@ -9,12 +9,7 @@ import { Carro } from '../../models/carro';
 })
 export class CarroComponent {
 
-  carro : Carro = {
-    id: 1,
-    nome: "Uno",
-    montadora: "Fiat",
-    preco: 4500,
-    ano: 1985
-  }
+  @Input()
+  carro : Carro = {} as Carro;
 
 }
