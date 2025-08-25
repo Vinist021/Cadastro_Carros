@@ -35,4 +35,10 @@ export class CarrosComponent {
     }
   ];
 
+  salvarCarro(){
+    this.novoCarro.id = this.carros.length + 1;
+    this.carros.push(this.novoCarro);
+    this.novoCarro = {} as Carro;
+  }
+
 }
