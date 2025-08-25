@@ -1,6 +1,7 @@
 <div class="container">
     <h3>Cadastro</h3>
-    <form action="">
+
+    <form #formCarros="ngForm">
         <div class="row">
             <label for="nome" class="col-form-label">Nome:</label>
             <input type="text" class="form-control" [(ngModel)]="carro.nome" name="nome" id="nome" required> 
@@ -19,7 +20,7 @@
         </div>
         <div class="row">
             <div>
-                <button class="btn btn-primary mt-3" (click)="salvar()">Salvar</button>
+                <button class="btn btn-primary mt-3" (click)="salvar()" [disabled]="formCarros.invalid">Salvar</button>
             </div>
         </div>
     </form>
