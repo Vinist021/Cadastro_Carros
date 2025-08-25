@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Carro } from '../../models/carro';
 
 @Component({
   selector: 'app-carro',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   templateUrl: './carro.html',
   styleUrl: './carro.css'
 })
-export class Carro {
+export class CarroComponent {
+
+  carro : Carro = {
+    id: 1,
+    nome: "Uno",
+    montadora: "Fiat",
+    preco: 4500,
+    ano: 1985
+  }
 
 }

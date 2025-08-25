@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Carro } from './components/carro/carro';
+import { CarroComponent } from './components/carro/carro';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Header } from './components/header/header';
+import { HeaderComponent } from './components/header/header';
 
 @NgModule({
   declarations: [
     App,
-    Carro,
-    Header
+    CarroComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
