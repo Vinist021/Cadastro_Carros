@@ -7,6 +7,7 @@ import { CarroComponent } from './components/carro/carro';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header';
 import { CarrosComponent } from './components/carros/carros';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarrosComponent } from './components/carros/carros';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

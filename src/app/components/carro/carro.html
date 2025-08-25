@@ -1,21 +1,26 @@
-<div class="row text-center">
-    <div class="col">
-        {{carro.id}}
-    </div>
-
-    <div class="col">
-        {{carro.nome}}
-    </div>
-
-    <div class="col">
-        {{carro.montadora}}
-    </div>
-
-    <div class="col">
-        {{carro.preco}}
-    </div>
-
-    <div class="col">
-        {{carro.ano}}
-    </div>
+<div class="container">
+    <h3>Cadastro</h3>
+    <form action="">
+        <div class="row">
+            <label for="nome" class="col-form-label">Nome:</label>
+            <input type="text" class="form-control" name="nome" id="nome" required> 
+        </div>
+        <div class="row">
+            <label for="montadora" class="col-form-label">Montadora:</label>
+            <input type="text" class="form-control" name="montadora" id="montadora" required> 
+        </div>
+        <div class="row">
+            <label for="preco" class="col-form-label">Preço:</label>
+            <input type="text" class="form-control" name="preco" id="preco" required> 
+        </div>
+        <div class="row">
+            <label for="preco" class="col-form-label">Ano:</label>
+            <input type="text" class="form-control" name="ano" id="ano" required> 
+        </div>
+        <div class="row">
+            <div>
+                <button class="btn btn-primary mt-3">Salvar</button>
+            </div>
+        </div>
+    </form>
 </div>
