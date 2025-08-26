@@ -3,20 +3,29 @@
 
     <form #formCarros="ngForm">
         <div class="row">
-            <label for="nome" class="form-label">Nome:</label>
-            <input type="text" class="form-control" [(ngModel)]="carro.nome" name="nome" id="nome" required> 
+            <div class="col-12">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" [(ngModel)]="carro.nome" name="nome" id="nome" required> 
+            </div>
         </div>
         <div class="row">
-            <label for="montadora" class="form-label">Montadora:</label>
-            <input type="text" class="form-control" [(ngModel)]="carro.montadora" name="montadora" id="montadora" required> 
+            <div class="col-12">
+                <label for="montadora" class="form-label pt-2">Montadora:</label>
+                <input type="text" class="form-control" [(ngModel)]="carro.montadora" name="montadora" id="montadora" required> 
+            </div>
         </div>
         <div class="row">
-            <label for="preco" class="form-label">Preço:</label>
-            <input type="text" class="form-control" [(ngModel)]="carro.preco" name="preco" id="preco" required> 
+            <div class="col-12 col-sm-6">
+                <label for="preco" class="form-label pt-2">Preço:</label>
+                <input type="text" class="form-control" [(ngModel)]="carro.preco" name="preco" id="preco" required> 
+            </div>
+            <div class="col-12 offset-sm-2 col-sm-4">
+                <label for="preco" class="form-label pt-2">Ano:</label>
+                <input type="text" class="form-control" [(ngModel)]="carro.ano" name="ano" id="ano" required> 
+            </div>
         </div>
         <div class="row">
-            <label for="preco" class="form-label">Ano:</label>
-            <input type="text" class="form-control" [(ngModel)]="carro.ano" name="ano" id="ano" required> 
+
         </div>
         <div class="row">
             <div>
