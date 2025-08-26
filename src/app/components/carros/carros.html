@@ -1,15 +1,16 @@
-<app-carro [carro]="novoCarro" (saveEmitter)="salvarCarro()"></app-carro>
+<app-carro [carro]="carro" (saveEmitter)="salvarCarro()"></app-carro>
 
 <div class="container">
     <h3>Carros Cadastrados</h3>
     <table class="table">
         <thead>
-            <tr>
+            <tr >
                 <th>#</th>
                 <th>Nome</th>
                 <th>Montadora</th>
                 <th>Preço</th>
                 <th>Ano</th>
+                <th class="text-end pe-6">Opções</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,10 @@
                 <td>{{carro.montadora}}</td>
                 <td>{{carro.preco}}</td>
                 <td>{{carro.ano}}</td>
+                <td class="text-end pe-0">
+                    <button class="btn btn-success me-2" (click)="atualizar(carro)">Alterar</button>
+                    <button class="btn btn-danger me-2" (click)="remover(carro)">Remover</button>
+                </td>
             </tr>
         </tbody>
     </table>

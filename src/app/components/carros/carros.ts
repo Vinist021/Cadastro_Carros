@@ -9,7 +9,9 @@ import { Carro } from '../../models/carro';
 })
 export class CarrosComponent {
 
-  novoCarro: Carro = {} as Carro;
+  carro: Carro = {} as Carro;
+  contadorId: number = 4;
+  ehAtualizacao: boolean = false;
 
   carros: Carro[] = [
     {
@@ -36,9 +38,25 @@ export class CarrosComponent {
   ];
 
   salvarCarro(){
-    this.novoCarro.id = this.carros.length + 1;
-    this.carros.push(this.novoCarro);
-    this.novoCarro = {} as Carro;
+    if(!this.ehAtualizacao){
+      this.carro.id = this.contadorId
+      this.contadorId++;
+      this.carros.push(this.carro);
+    }
+
+    this.carro = {} as Carro;
+    this.ehAtualizacao = false;
+  } 
+
+  atualizar(carroSelecionado: Carro){
+    this.carro = carroSelecionado;
+    this.ehAtualizacao = true;
+  }
+
+  remover(carroRemover: Carro){
+    this.carros = this.carros.filter(c => c !== carroRemover);
+    this.carro = {} as Carro;
+    this.ehAtualizacao = false;
   }
 
 }
