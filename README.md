@@ -1,59 +1,56 @@
-# CadastroCarros
+# 🚗 Cadastro de Carros  
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+Um projeto Angular para cadastro, listagem, atualização e remoção de carros.  
+Conta com Bootstrap para o layout responsivo e segue boas práticas de organização de componentes.  
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Funcionalidades  
 
-```bash
-ng serve
+- ➕ **Cadastro** de novos carros (nome, montadora, preço, ano)  
+- 📋 **Listagem** de carros cadastrados  
+- ✏️ **Edição** dos dados de um carro  
+- 🗑️ **Remoção** de carros  
+- 📱 **Interface responsiva** com Bootstrap  
+
+---
+
+## 🗂️ Estrutura do Projeto  
+
+```
+src/
+  app/
+    components/
+      carro/      # Formulário de cadastro/edição de carro
+      carros/     # Listagem e gerenciamento dos carros
+      header/     # Cabeçalho da aplicação
+    models/
+      carro.ts    # Interface do modelo Carro
+    app.ts        # Componente principal
+    app-module.ts # Módulo principal
+    ...
+  index.html
+  styles.css
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🚀 Como rodar o projeto  
 
-## Code scaffolding
+1. Instale as dependências:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+   ```sh
+   npm install
+   ```
 
-```bash
-ng generate component component-name
-```
+2. Rode o servidor de desenvolvimento:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```sh
+   npm start
+   ```
 
-```bash
-ng generate --help
-```
+3. Acesse no navegador: [http://localhost:4200](http://localhost:4200)
 
-## Building
+## 🛠️ Tecnologias utilizadas
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular 20](https://angular.io/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [TypeScript](https://www.typescriptlang.org/)
