@@ -35,19 +35,23 @@ src/
 
 ## 🚀 Como rodar o projeto  
 
-1. Instale as dependências:
+1. Garanta que o Node.js versão 20 ou superior esteja instalado em sua máquina
+
+   **Link para download:** [Node.js](https://nodejs.org/pt/download)
+
+2. Instale as dependências:
 
    ```sh
    npm install
    ```
 
-2. Rode o servidor de desenvolvimento:
+3. Rode o servidor de desenvolvimento:
 
    ```sh
    npm start
    ```
 
-3. Acesse no navegador: [http://localhost:4200](http://localhost:4200)
+4. Acesse no navegador: [http://localhost:4200](http://localhost:4200)
 
 ## 🛠️ Tecnologias utilizadas
 
