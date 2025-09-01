@@ -1,4 +1,4 @@
-# 🚗 Cadastro de Carros  
+## 🚗 Cadastro de Carros  
 
 Um projeto Angular para cadastro, listagem, atualização e remoção de carros.  
 Conta com Bootstrap para o layout responsivo e segue boas práticas de organização de componentes.  
@@ -14,6 +14,9 @@ Conta com Bootstrap para o layout responsivo e segue boas práticas de organiza�
 - 📱 **Interface responsiva** com Bootstrap  
 
 ---
+
+## 👀 Visão do projeto
+<img width="1356" height="710" alt="image" src="https://github.com/user-attachments/assets/d6edefcf-d2ad-4937-a038-dd083982585e" />
 
 ## 🗂️ Estrutura do Projeto  
 
